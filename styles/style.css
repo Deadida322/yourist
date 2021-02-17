@@ -80,6 +80,9 @@ h1,h2{
     font-size: 3em;
     font-weight: normal;
 }
+.s_digit{
+    min-width: 6rem;
+}
 .sales{
     display: flex;
     flex-direction: column;
