@@ -25,7 +25,7 @@ $(document).ready(function() {
         setTimeout(()=>{
             $('.modal').removeClass('z');
         }, 10);
-    });
+    }); 
     setInterval(()=>{
         sec--;
         thats = '&nbsp'+sec;
