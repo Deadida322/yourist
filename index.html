@@ -6,16 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>юрист</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <script src="script.js"></script>
     <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
         crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" type="text/css" href="styles/lightSlider.css"/>
+    <script src="scripts/lightslider.js"></script>
+    <script src="scripts/script.js"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div class="container">
+        <section class="modal">
+            <form action="mail.php" method="POST" class="modal_form footer_form">
+                <p class="krest">✖</p>
+                <h3 class="label_form">Консультация<br> бесплатна</h3>
+                <div class="inputs">
+                    <input class="inputss Sname" name="user_name" type="text" placeholder="Имя">
+                    <input class="inputss user_phone"type="phone" name="user_phone"placeholder="Номер телефона">
+                </div>
+                <button type="submit" class="sale_button">ОТПРАВИТЬ</button>
+            </form>
+        </section>
         <div class="contact_bar">
             <div class="contact_bar_first_items">
                 <div class="icon"></div>
@@ -106,15 +119,28 @@
                     <div class="square_txt">работаем по договору</div>
                 </div>
             </div>
-            <div class="comment_block">
-                <div class="teller_info">
-                    <img src="styles/assets/images/otz1.jpg" alt="" class="teller_img">
-                    <div class="teller_name">ИВАН АНТОНОВИЧ</br>-ИЮНЬ 2018</div>
-                </div>
-                <div class="self_comment">
-                    <p class="comment_head">ОТЗЫВ:</p>
-                    <div class="comment_content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores ducimus debitis nostrum soluta dicta omnis earum iusto aliquid, numquam deleniti quod ipsum. Porro, dolores quam aut aliquam quae neque.</div>
-                </div>
+            <div id="inside_comment">
+                <li class="comment_block">
+                    <div class="teller_info">
+                        <img src="styles/assets/images/otz1.jpg" alt="" class="teller_img">
+                        <div class="teller_name">ИВАН АНТОНОВИЧ</br>-ИЮНЬ 2018</div>
+                    </div>
+                    <div class="self_comment">
+                        <p class="comment_head">ОТЗЫВ:</p>
+                        <div class="comment_content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores ducimus debitis nostrum soluta dicta omnis earum iusto aliquid, numquam deleniti quod ipsum. Porro, dolores quam aut aliquam quae neque.</div>
+                    </div>
+                </li>
+                <li class="comment_block">
+                    <div class="teller_info">
+                        <img src="styles/assets/images/otz2.jpg" alt="" class="teller_img">
+                        <div class="teller_name">Я СЕРЁГА</br>-ИЮЛЬ 2019</div>
+                    </div>
+                    <div class="self_comment">
+                        <p class="comment_head">ОТЗЫВ:</p>
+                        <div class="comment_content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores ducimus debitis nostrum soluta dicta omnis earum iusto aliquid, numquam deleniti quod ipsum. Porro, dolores quam aut aliquam quae neque.</div>
+                    </div>
+                </li>
+                
             </div>
         </section>
         <section class="third_block">

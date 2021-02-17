@@ -6,6 +6,7 @@
     font-family: 'GS'; 
     font-size: 16px;
     box-sizing: border-box;
+    transition: all .3s ease-in;
 }
 h1,h2{
     font-weight: normal;
@@ -147,6 +148,7 @@ h1,h2{
     height: 50%;
 }
 .sale_button{
+    transition: all .3s ease-in;
     padding: 0.5em;
     background-color: #ffd255;
     border-radius: 1em;
@@ -154,6 +156,8 @@ h1,h2{
     box-shadow: 0px 0px 2px 1px rgba(118, 255, 240, 0.6);
     font-size: 1.5em;
     color: #fff;
+    outline: none;
+    cursor: pointer;
 }
 .second_block{
     
@@ -162,6 +166,7 @@ h1,h2{
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
+    padding-bottom: 3em;
 }
 .feedback_header{
     text-shadow: 2px 2px 0px rgba(20, 20, 20, 0.8);
@@ -173,6 +178,7 @@ h1,h2{
     border-bottom: 2px solid #161616d7
 }
 .square{
+    transition: all .3s ease-in;
     padding: 2em 0.5em;
     width: 15%;
     backdrop-filter: blur(3px);
@@ -190,6 +196,7 @@ h1,h2{
     padding: 1em;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10em;
 }
 .square_txt{
     font-size: 1.2em;
@@ -198,10 +205,21 @@ h1,h2{
 }
 .comment_block{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.inside_comment{
+    display: flex;
     margin-bottom: 2em;
-    margin-top: 12em;
+    margin-top: 10em;
     padding: 2em 6em;
+}
+
+.slick-slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .teller_img{
     width: 10em;
@@ -336,4 +354,121 @@ iframe{
 }
 .mail{
     margin: 0;
+}
+.footer_form{
+    -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.14)  ;
+            box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.14)  ; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    width: 25em
+}
+.modal{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -20;
+    background-color: #00000031;
+    opacity: 00;
+    transform: scale(1.2);
+}
+.inputs{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.label_form{
+    font-weight: normal;
+    text-align: center;
+    color: #e9ab00;
+    font-size: 1.5em;
+}
+.z{
+    z-index: 30;
+}
+
+.modal_show{
+    
+    transform: scale(1);
+    opacity: 100;
+}
+.krest{
+    position: absolute;
+    top: 0em;
+    right: 1em;
+    cursor: pointer;
+}
+.modal_form{
+    position: relative;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+.inputss{
+    padding: 10px;
+    height: 3em;
+    width: 20em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4e4;
+    margin-top: 100px;
+}
+.Sname,.user_phone{
+  margin: 2em;  
+}
+.sale_button:hover{
+    background-color: #ffdd7e;
+    border: 2px solid #aaaa05;
+    color: rgb(0, 0, 0);
+}
+.square:hover{
+    backdrop-filter: blur(10px);
+    transform: translateY(-10px);
+    background-color: #ffdd7e96;
+    box-shadow:         5px 5px 7px 0px rgba(50, 50, 50, 0.25);
+}
+.instruction_item:hover{
+    transform: translateY(-10px);
+}
+.social_item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 13px #a0bd00af);
+}
+.nav_item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media screen and (max-width: 1600px){
+    *{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1400px){
+    *{
+        font-size: 10px;
+    }
+    .sales{
+        padding: 0.5em 1em;
+        width: 37%;
+    }
 }
