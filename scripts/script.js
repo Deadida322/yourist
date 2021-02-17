@@ -9,7 +9,7 @@ $(document).ready(function() {
         slideMargin: -10,
         loop: true,
         pager: true,
-        controls: true,
+        controls: false,
         speed: 1000, //ms'
         auto: true,
         pause: 4000,
