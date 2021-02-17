@@ -1,3 +1,6 @@
+
+let sec = 11;
+let min = 32
 $(document).ready(function() {
     $('#inside_comment').lightSlider({
         item: 1,
@@ -15,14 +18,24 @@ $(document).ready(function() {
         $('.modal').addClass('z');
         setTimeout(()=>{
             $('.modal').addClass('modal_show');
-        }, 4);
-        
+        }, 10); 
     });
     $('.krest').on('click', ()=>{
         $('.modal').removeClass('modal_show');
         setTimeout(()=>{
             $('.modal').removeClass('z');
-        }, 4);
-        
+        }, 10);
     });
+    setInterval(()=>{
+        sec--;
+        thats = '&nbsp'+sec;
+        console.log(thats)
+        if(sec == 1){
+            sec = 60;
+            min--;
+            thatsm = '&nbsp'+min+':';
+            $('.m_digit').html(thatsm);
+        }
+        $('.s_digit').html(thats);
+    }, 1000);
   });
