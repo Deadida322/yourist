@@ -244,6 +244,44 @@ h1,h2{
     margin: 1em;
     font-size: 1.5em;
     color: #fff;
+    position: relative;
+}
+
+.contact_first_item,.contact_second_item,.contact_third_item{
+    position: relative;
+}
+.contact_third_item::after{
+    top: 0em;
+    left: -1em;
+    position: absolute;
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/images/soc2.png);
+}
+.contact_first_item::after{
+    top: 0.1em;
+    left: -1em;
+    position: absolute;
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/images/con1.png);
+}
+.contact_second_item::after{
+    top: 0.1em;
+    left: -1em;
+    position: absolute;
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/images/con2.png);
 }
 .self_comment{
     width: 60%;
