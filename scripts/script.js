@@ -6,7 +6,7 @@ $(document).ready(function() {
         item: 1,
         autoWidth: false,
         slideMove: 1, // slidemove will be 1 if loop is true
-        slideMargin: -10,
+        slideMargin: 10,
         loop: true,
         pager: true,
         controls: false,
@@ -25,11 +25,11 @@ $(document).ready(function() {
         setTimeout(()=>{
             $('.modal').removeClass('z');
         }, 10);
-    }); 
+    });
     setInterval(()=>{
         sec--;
         thats = '&nbsp'+sec;
-        console.log(thats)
+
         if(sec == 1){
             sec = 60;
             min--;
@@ -38,4 +38,15 @@ $(document).ready(function() {
         }
         $('.s_digit').html(thats);
     }, 1000);
+    $('.gamb').click(function(){
+        $('.menu').toggleClass('menu-active');
+    });
+    $('.menu a').click(function() {
+
+        $('.menu').removeClass('menu-active');
+    
+    });
+    $('.kr').click(function() {
+        $('.menu').removeClass('menu-active');
+    });
   });
