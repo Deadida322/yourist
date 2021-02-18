@@ -524,7 +524,26 @@ iframe{
         width: 37%;
     }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1200px){
+    .digit{
+        font-size: 5em;
+    }
+    .s_digit{
+        min-width: 7rem;
+    }
+    .first_block{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2%;
+    }
+    .sales{
+        padding: 1em 2em;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 700px){
     *{
         font-size: 8px;
     }
