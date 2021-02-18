@@ -117,6 +117,12 @@ h1,h2{
     font-size: 2em;
 
 }
+.gamb{
+    display: none;
+}
+.menu{
+    display: none;
+}
 .digit{
     font-size: 4em;
 }
@@ -656,6 +662,7 @@ iframe{
         width: 100vw;
     }
     .gamb{
+        display: block;
         height: 4em;
     }
     .kr{
