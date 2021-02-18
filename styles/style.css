@@ -543,7 +543,13 @@ iframe{
         width: 80%;
     }
 }
+@media screen and (max-width: 1000px){
+    .digit{
+        font-size: 4em;
+    }
+}
 @media screen and (max-width: 700px){
+    
     *{
         font-size: 8px;
     }
@@ -727,5 +733,19 @@ iframe{
         top: 1em;
         left: 1em;
         font-size: 3em;
+    }
+    .digit{
+        font-size: 4em;
+    }
+    .s_digit{
+        min-width: 6rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .digit{
+        font-size: 3.5em;
+    }
+    .s_digit{
+        min-width: 5rem;
     }
 }
