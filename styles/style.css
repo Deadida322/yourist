@@ -11,6 +11,14 @@
 h1,h2{
     font-weight: normal;
 }
+a{
+    text-decoration: none;
+    color: #161616;
+}
+select{
+    border:none;
+    outline: none;
+}
 .container{
     width: 100%;
     margin: 0 auto;
@@ -75,6 +83,15 @@ h1,h2{
 }
 .documents_item{
     width: 30%;
+    margin: 1em;
+}
+option{
+    text-align: right;
+}
+.pol{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer
 }
 .documents_header{
     font-size: 3em;
@@ -222,7 +239,7 @@ h1,h2{
     display: flex;
     margin-bottom: 2em;
     margin-top: 10em;
-    padding: 2em 6em;
+    padding: 2em 5em;
 }
 
 .slick-slide{
@@ -289,9 +306,12 @@ h1,h2{
 }
 .comment_head{
     font-size: 2em;
+    margin-top: .2em;
+    margin-bottom: .2em;
 }
 .comment_content{
-    font-size: 1.5em;
+    font-size: 1.1em;
+    padding: .5em;
 }
 .third_block{
     text-align: center;
@@ -320,6 +340,53 @@ h1,h2{
     box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.48);
     background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(228,245,254,1) 100%);
 }
+.graph{
+    text-align: center;
+}
+.why{
+    background-image: url(assets/images/why.jpg);
+    
+}
+.preim_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 28%;
+    padding: 1em;
+    margin: 1em;
+    border-radius: .5em;
+    border: 2px solid #95dbd3;
+    background-color:rgba(255, 255, 255, 0.664)
+}
+.preim_container{
+    padding: 0 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.preim_txt{
+    margin-top: .4em;
+}
+.preim_head{
+    border-bottom: 1px solid #161616
+}
+.why_img{
+    width: 2em;
+    height:2em
+}
+.preim_head{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.preim_header{
+    margin-top:.3em;
+    margin-bottom:.3em;
+}
+.preim_header,.preim_txt{
+    font-size: 1.5em;
+}
+
 .instruction_content{
     margin-top: 1em;
     margin-bottom: 2em;
@@ -560,6 +627,22 @@ iframe{
     .head{
         padding: 0 1em;
     }
+    .preim_container{
+        padding: 0 .5em;
+    }
+    .preim_item{
+
+        width: 95%;
+    }
+    .preim_header,.preim_txt{
+        font-size: 1.5em;
+    }
+    .preim_container{
+        padding: 0 3em;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
     .first_block{
         display: flex;
         flex-direction: column-reverse;
@@ -611,6 +694,7 @@ iframe{
     }
     .comment_block{
         padding: 0.5em;
+        min-height: 14em;
     }
     .instruction_header{
         margin-top: 0em;
@@ -645,6 +729,9 @@ iframe{
         font-size: 2.5em;
         padding: 0 5%;
         margin-bottom: 1em;
+    }
+    .comment_content{
+        font-size: 1.1em;
     }
     input{
         width: 100%;
