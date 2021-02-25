@@ -13,6 +13,8 @@ h1,h2{
 }
 a{
     text-decoration: none;
+    display: inline-block;
+    width: auto;
     color: #161616;
 }
 select{
@@ -792,7 +794,7 @@ iframe{
         height: 100vh; /* блок занимает всю высоту браузера */
     }
     /* Стилизация ссылок меню */
-    a{
+    .amen{
         display: block; /* из строчного в блочный */
         color: #6f2d35;
         line-height: 50px;
@@ -807,7 +809,7 @@ iframe{
         justify-content: center; /* выравнивание по центру */
     }
     /* Эффект наведения мыши на ссылки */
-    a:hover{
+    .amen:hover{
         background-color: #efc5fa;
         width: 100vw;
     }
