@@ -328,7 +328,7 @@ option{
 }
 .contact_first_item::after{
     top: 0.1em;
-    left: -1em;
+    left: -1.2em;
     position: absolute;
     content: '';
     width: 1em;
