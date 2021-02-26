@@ -109,7 +109,7 @@ option{
     align-items: center;
     justify-content: center;
     padding: 1em 2em;
-    width: 35%;
+    width: 60%;
     background-color:#fff;
     -webkit-box-shadow: 0px -1px 23px 15px rgba(118, 255, 240, 0.2) inset;
     -moz-box-shadow: 0px -1px 23px 15px rgba(118, 255, 240, 0.2) inset;
@@ -438,7 +438,7 @@ option{
 .instruction_content{
     margin-top: 1em;
     margin-bottom: 2em;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .fourth_block{
     text-align: center;
@@ -630,6 +630,10 @@ iframe{
     *{
         font-size: 12px;
     }
+    .sales{
+        padding: 0.5em 1em;
+        width: 50%;
+    }
 }
 @media screen and (max-width: 1400px){
     *{
@@ -637,7 +641,7 @@ iframe{
     }
     .sales{
         padding: 0.5em 1em;
-        width: 37%;
+        width: 50%;
     }
 }
 @media screen and (max-width: 1200px){
