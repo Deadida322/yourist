@@ -17,6 +17,7 @@ a{
     width: auto;
     color: #161616;
 }
+
 select{
     border:none;
     outline: none;
@@ -196,6 +197,49 @@ option{
     background-repeat: no-repeat;
     padding-bottom: 3em;
 }
+.pricing_back{
+    background-image: url(assets/images/price.png)
+}
+.about1{
+    font-size: 2em;
+}
+.pricing_block{
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 2em;
+    background-color: #060e1dd3;
+    border-radius: .5em;
+    border: 2px solid #142849;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.backward{
+    color: white;
+    padding: 1em;
+    background-color: #060e1dd3;
+    border-radius: .5em;
+    border: 2px solid #142849;
+    margin: 1em auto;
+    font-size: 1.5em;
+}
+.log{
+    width:10em;
+    margin: 0 auto;
+}
+.pricing_item{
+    cursor: pointer;
+    transition: all .05s ease-in-out;
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+}
+.pricing_item:hover{
+    color: #ffff00;
+}
+.pricing_txt, .pricing_value{
+    font-size: 1.5em;
+}
 .feedback_header{
     text-shadow: 2px 2px 0px rgba(20, 20, 20, 0.8);
     backdrop-filter: blur(2px);
@@ -265,7 +309,9 @@ option{
     color: #fff;
     position: relative;
 }
-
+.about_block{
+    width: 70%;
+}
 .contact_first_item,.contact_second_item,.contact_third_item{
     position: relative;
 }
@@ -539,6 +585,7 @@ iframe{
     right: 1em;
     cursor: pointer;
 }
+
 .modal_form{
     position: relative;
     padding: 1em;
@@ -618,13 +665,42 @@ iframe{
     }
 }
 @media screen and (max-width: 700px){
-    
+    .pricing_block{
+        backdrop-filter: blur(5px);
+        color: white;
+        padding: 1em;
+        background-color: #060e1dd3;
+        border-radius: .5em;
+        border: 2px solid #142849;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .log{
+        width:10em;
+        margin: 0 auto;
+    }
+    .pricing_item{
+        cursor: pointer;
+        transition: all .05s ease-in-out;
+        margin: 2em 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pricing_item:hover{
+        color: #ffff00;
+    }
+    .pricing_txt, .pricing_value{
+        font-size: 1.3em;
+    }
     *{
         font-size: 8px;
     }
     .contact_bar{
         font-size: .5em;
         padding:0.5rem 0.5rem;        
+    }
+    .about_block{
+        width: 100%;
     }
     .head{
         padding: 0 1em;

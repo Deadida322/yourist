@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>юрист</title>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
@@ -52,21 +58,22 @@
             <img src="styles/assets/images/burger.png" alt="" class="gamb">
             <nav class="navbar">
                
-                <div class="nav_item">стоимость услуг</div>
-                <div class="nav_item">о компании</div>
-                <div class="nav_item">контакты</div>
+                <div class="nav_item"><a href="price.html">стоимость услуг</a></div>
+                <div class="nav_item"><a href="about.html">о компании</a></div>
+                <div class="nav_item"><a href="#contact">контакты</a></div>
             </nav>
             <nav class="menu">
                 <div class="kr">x</div>
                 <ul class="ul">
-                  <li><a  class="amen" href="#home">Услуги</a></li>
-                  <li><a  class="amen" href="#benefit">Стоимость услуг</a></li>
-                  <li><a  class="amen" href="#portfolio">О компании</a></li>
+                    <li><a  class="amen" href="/">Главная</a></li>
+                  <li><a  class="amen" href="price.html">Стоимость услуг</a></li>
+                  <li><a  class="amen" href="about.html">О компании</a></li>
                   <li><a  class="amen" href="#contact">Контакты</a></li>
                 </ul>
             </nav>
             
         </header>    
+        
         <section class="first_block">
             <div class="documents">
                 <h1 class="documents_header">Юридические услуги</h1>
@@ -274,7 +281,8 @@
                 </div>
             </div>
         </section>
-        <section class="fourth_block">
+        <section  class="fourth_block">
+            <a name="contact"></a>
             <h1 class="form_header">Заполните форму и получите консультацию + скидку 30% на все услуги</h1>
             <form action="" class="to_submit">
                 <input type="text" placeholder="Ваше имя">
@@ -302,7 +310,7 @@
                 </div>
                 <div class="descr">Услуги профессионального юриста <br> в оренбургской области</div>
                 <div class="adress">Адрес: Оренбургская обл., г. Медногорск,<br> ул. Кирова, д. 19</div>
-                <a download=""><div class="pol">Политика обработки персональных данных</div></a>
+                <a href="politic.html"><div class="pol">Политика обработки персональных данных</div></a>
             </div>
             <div class="footer_right">
                 <div class="number">8-961-937-7865<br> 8-905-894-7112</div>
@@ -310,6 +318,28 @@
                 <div class="graph"> ПН-ПТ: с 09-00 до 18-00,<br> СБ: с 10-00 до 14-00,<br> ВС: выходной</div>
                 <div class="mail contact_first_item">yurist.mednogorck@yandex.ru</div>
             </div>
+            <script type='text/javascript'>
+                (function () {
+                window['yandexChatWidgetCallback'] = function() {
+                try {
+                window.yandexChatWidget = new Ya.ChatWidget({
+                guid: 'a3762508-ce1b-91e1-7d3e-2c09df1d69d4',
+                buttonText: '',
+                title: 'Чат',
+                theme: 'light',
+                collapsedDesktop: 'never',
+                collapsedTouch: 'never'
+                });
+                } catch(e) { }
+                };
+                var n = document.getElementsByTagName('script')[0],
+                s = document.createElement('script');
+                s.async = true;
+                s.charset = 'UTF-8';
+                s.src = 'https://yastatic.net/s3/chat/widget.js';
+                n.parentNode.insertBefore(s, n);
+                })();
+                </script>
         </footer>
     </div>
 </body>
