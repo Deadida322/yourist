@@ -135,8 +135,19 @@ option{
 .timer_digits{
     display: flex;
     justify-content: center;
-    font-size: 2em;
 
+}
+.mob_digits{
+    display: none;
+}
+.desktop_digits{
+    display: block;
+}
+.desktop_digits span,div{
+    font-size: 1em;
+}
+.mob_digits span,div{
+    font-size: 1em;
 }
 .gamb{
     display: none;
@@ -406,7 +417,13 @@ option{
     margin: 1em;
     border-radius: .5em;
     border: 2px solid #95dbd3;
-    background-color:rgba(255, 255, 255, 0.664)
+    background-color:rgba(255, 255, 255, 0.664);
+    backdrop-filter: blur(2px);
+}
+.preim_item:hover{
+    background-color: #ffdd7e96;
+    transform: translateY(-3px) ;
+    backdrop-filter: blur(6px);
 }
 .preim_container{
     padding: 0 3em;
@@ -670,6 +687,12 @@ iframe{
     }
 }
 @media screen and (max-width: 700px){
+    .desktop_digits{
+        display: none;
+    }
+    .mob_digits{
+        display: block;
+    }
     .pricing_block{
         backdrop-filter: blur(5px);
         color: white;
@@ -794,7 +817,7 @@ iframe{
         height: 5em;
     }
     .instruction_item{
-        width:35%;
+        width:40%;
         margin: 0.5em;
     }
     .instruction_content{
